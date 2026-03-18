@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador</title>
+
+    <!--
+      GitHub Pages procura um index.html na raiz publicada.
+      O app está em /simulador, então redirecionamos.
+    -->
+    <meta http-equiv="refresh" content="0; url=./simulador/" />
+    <link rel="canonical" href="./simulador/" />
+
+    <script>
+      // Evita problema com "base" e garante redirecionamento imediato
+      // mesmo quando o meta refresh é bloqueado.
+      (function () {
+        var target = "./simulador/";
+        if (!location.pathname.endsWith("/simulador/") && !location.pathname.endsWith("/simulador/index.html")) {
+          location.replace(target);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>
+        Abra o app em
+        <a href="./simulador/">./simulador/</a>.
+      </p>
+    </noscript>
+  </body>
+</html>
