@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador</title>
+  <meta name="robots" content="noindex" />
+  <script>
+    (function () {
+      // GitHub Pages normalmente publica em /<repo>/.
+      // Se este arquivo estiver na raiz publicada, redireciona para /<repo>/simulador/
+      var base = location.pathname;
+      // garante que base termine com "/"
+      if (!base.endsWith("/")) base = base.substring(0, base.lastIndexOf("/") + 1);
+      var target = base + "simulador/";
+      location.replace(target);
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=simulador/" />
+  </noscript>
+</head>
+<body>
+  <p>Redirecionando para <a href="simulador/">simulador/</a>…</p>
+</body>
+</html>
